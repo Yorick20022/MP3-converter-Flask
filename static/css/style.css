@@ -1,0 +1,93 @@
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 80rem;
+  margin: auto 0;
+  padding: 0 2rem;
+}
+
+.about-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #939393;
+  padding: 0 2rem;
+  margin: auto 0;
+}
+
+.about-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  padding: 4rem 0;
+  margin: 0 auto;
+}
+
+.about-container div h2 {
+  font-size: 3.6rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.about-container div p {
+  max-width: 60rem;
+  font-size: 1.0rem;
+  color: #c4c4c4;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  line-height: 2;
+  text-align: center;
+}
+
+.about-container div h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.about-container .sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.bank-america {
+  height: 3rem;
+}
+
+.bank-chase {
+  height: 2.5rem;
+}
+
+.bank-morgan {
+  height: 2rem;
+}
+
+.bank-wells {
+  height: 4rem;
+}
+
+@media (min-width: 640px) {}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+@media (min-width: 1536px) {}

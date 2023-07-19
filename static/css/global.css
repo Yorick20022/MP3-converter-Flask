@@ -1,0 +1,155 @@
+@font-face {
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+  font-family: "Montserrat";
+  font-display: swap;
+}
+
+@font-face {
+  src: url("../fonts/Newzald-Book.ttf");
+  font-family: "Newzald";
+  font-display: swap;
+}
+
+:root {
+  --dark-gray: #1e1e1e;
+  --gray: #6E6E6E;
+  --green: #BCFD4C;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+  background-color: var(--gray);
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+a, a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  background-color: var(--green);
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 12px 4px rgb(0, 0, 0, 0.05);
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: var(--white);
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--dark-gray);
+  padding: 1.8rem 2rem;
+}
+
+footer .first {
+  max-width: 80rem;
+  width: 100%;
+  padding-bottom: 2.8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.0rem;
+  flex-direction: column;
+  row-gap: 1.8rem;
+}
+
+footer .index {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+}
+
+footer .first div:nth-child(2) h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+footer .index a {
+  font-size: 0.95rem;
+  color: #c9c9c9;
+  transition: 0.3s ease-in-out;
+}
+
+footer .index a:hover {
+  color: var(--green);
+}
+
+footer div:nth-child(1) p {
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+  color: #c9c9c9;
+}
+
+footer div:nth-child(1) h3 {
+  font-size: 1.3rem;
+}
+
+footer div:nth-child(1) div div {
+  display: flex;
+  column-gap: 0.8rem;
+  fill: var(--white);
+  transition: 0.3s ease-in-out;
+  margin-top: 1rem;
+}
+
+footer div:nth-child(1) a svg {
+  fill: var(--white);
+  transition: 0.3s ease-in-out;
+}
+
+footer div:nth-child(1) a svg:hover {
+  fill: var(--green);
+}
+
+footer .last {
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid var(--gray);
+  padding-top: 1.8rem;
+}
+
+footer div:nth-child(2) p {
+  font-size: 0.90rem;
+  font-weight: 300;
+}
+
+footer .last a {
+  font-size: 0.90rem;
+  font-weight: 500;
+  color: var(--green);
+  transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  footer .first {
+    display: flex;
+    flex-direction: row;
+    row-gap: 0;
+  }
+}
