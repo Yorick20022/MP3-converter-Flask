@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/download.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="http://localhost:5000/socket.io/socket.io.js"></script>
+  <title>Converter</title>
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="border">
+    </div>
+    <div class="imageDiv">
+      <img class="image" src="{{url.thumbnail_url}}">
+    </div>
+    <div class="borderURL">
+    </div>
+    <!-- <div class="title">
+      <p>{{url.title}}</p>
+    </div> -->
+    <div class="url">
+      <p>{{url.watch_url}}</p>
+    </div>
+    <div class="bottomBorder">
+    </div>
+    <div class="uploadedBy">
+      <p>{{url.author}}</p>
+    </div>
+    <div class="duration">
+      <p>Duration: {{time}}</p>
+    </div>
+    <div>
+      <i class="fa-solid fa-cloud-arrow-down" id="downloadIcon"></i>
+    </div>
+    <div class="size">
+      <p class="psize">Size: {{size}}</p>
+    </div>
+  </div>
+
+  <script>
+    function saveFile(blob, filename) {
+      if (window.navigator.msSaveOrOpenBlob) {
+        window.navigator.msSaveOrOpenBlob(blob, filename);
+      } else {
+        const a = document.createElement('a');
+        document.body.appendChild(a);
+        const url = window.URL.createObjectURL(blob);
+        a.href = url;
+        a.download = filename;
+        a.click();
+        setTimeout(() => {
+          window.URL.revokeObjectURL(url);
+          document.body.removeChild(a);
+        }, 0)
+      }
+    }
+    const btn = document.getElementById('downloadIcon');
+    btn.onclick = function () {
+      const fd = new FormData()
+      fd.append("mp3", true)
+      fetch("/download", { method: "POST", body: fd }).then(res => {
+        if (res.status === 200) {
+          console.log("success")
+          res.blob().then(blob => {
+            saveFile(blob, res.headers.get("filename"))
+          })
+        }
+      })
+    }
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #4b6cb7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    user-select: none;
+}
+
+
+.main {
+    margin-top: 3%;
+    /* This causes the entire thing to move down */
+    margin-left: 1%;
+}
+
+.border {
+    position: absolute;
+    border: 20px solid #252525;
+    background-color: #252525;
+    border-radius: 10px;
+    width: 35%;
+    margin-left: 31.5%;
+    margin-bottom: 5%;
+    margin-top: 13%;
+    padding-top: 19%;
+}
+
+.imageDiv {
+    overflow: hidden;
+    position: absolute;
+    margin-left: 38.3%;
+    margin-top: 17%;
+    border-radius: 1.5% 1.5% 0px 0px;
+}
+
+.image {
+    margin: -11% 0;
+    width: 50vh;
+}
+
+.borderURL {
+    background-color: #454545;
+    position: absolute;
+    border: 20px solid #454545;
+    border-radius: 20px;
+    width: 25%;
+    margin-left: 36.7%;
+    margin-top: 14%;
+}
+
+.url {
+    position: absolute;
+    margin-left: 39.5%;
+    margin-top: 13.3%;
+    color: #AEAEAE;
+    font-size: 20px;
+}
+
+.title {
+    position: absolute;
+    margin-left: 81vh;
+    margin-top: 8.5%;
+    color: white;
+    font-size: 25px;
+}
+
+.bottomBorder {
+    position: absolute;
+    border: 20px solid #454545;
+    width: 22.1%;
+    border-radius: 0% 0% 15px 15px;
+    margin-left: 38.3%;
+    margin-top: 30%
+}
+
+.duration {
+    position: absolute;
+    margin-left: 55.7%;
+    margin-top: 29.5%;
+    color: #fff;
+    font-size: 17px;
+}
+
+.fa-cloud-arrow-down {
+    position: absolute;
+    margin-left: 49.5%;
+    margin-top: 30.3%;
+    color: #fff;
+    font-size: 25px;
+}
+
+.fa-cloud-arrow-down:hover {
+    cursor: pointer;
+}
+
+.uploadedBy {
+    position: absolute;
+    font-size: 17px;
+    color: #fff;
+    margin-left: 39%;
+    margin-top: 29.5%;
+}
+
+.size {
+    position: absolute;
+    font-size: 11px;
+    color: #696969;
+    margin-left: 48.6%;
+    margin-top: 32%;
+    text-align: center;
+    padding: auto;
+}

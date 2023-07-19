@@ -1,0 +1,77 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #4b6cb7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30vh;
+    color: #FFF;
+}
+
+.heading {
+    position:relative;
+    text-align: center;
+}
+
+.paragraph {
+    position:relative;
+    text-align: center;
+    color: white;
+}
+
+p1 {
+    position:relative;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.input {
+    position:relative;
+    background-color: #181A1B;
+    border: none;
+    border-radius: 100px;
+    width: 68.5vh;
+    padding-bottom: 3vh;
+    margin-top: 6vh;
+    margin-left: 67.5vh;
+    padding-top: 3vh;
+    padding-left: 2.08vh;
+    color: white;
+}
+
+.input:after {
+    background-color: #4b6cb7;
+}
+
+input[type=text] {
+    position:relative;
+    color: white;
+    font-size: 18px;
+    text-indent: 4.3vh;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.fa-magnifying-glass {
+    position: relative;
+    color: white;
+    margin-right: 136vh;
+    right: -70vh;
+    bottom: 5.3vh;
+    font-size: 20px;
+}
+
+.tutorial {
+    margin-top: 10%;
+    text-align: center;
+    color: #FFF;
+    font-size: 17px;
+    opacity: 75%;
+}
